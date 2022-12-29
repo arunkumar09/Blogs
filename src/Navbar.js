@@ -1,3 +1,5 @@
+
+//use sfc - stateless functional components
 const Navbar = () => {
     return (  
         <nav className="navbar">

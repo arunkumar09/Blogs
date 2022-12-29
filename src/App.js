@@ -5,6 +5,7 @@ function App() {
   
 
   return (
+    //JSX - babel converst this to HTML
     <div className="App">
       <Navbar></Navbar>
       <div className='content'>
