@@ -3,6 +3,8 @@ import Home from './Home';
 import React, { useState, useEffect } from 'react';
 import './index.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './Create.js';
+import BlogDetails from './BlogDetails';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -27,8 +29,14 @@ function App() {
         <Navbar></Navbar>
         <div className='content'>
           <Switch>
-            <Route path="/">
+            <Route exact path="/">
               <Home></Home>
+            </Route>
+            <Route path="/create">
+              <Create></Create>
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails></BlogDetails>
             </Route>
           </Switch>       
         </div>
