@@ -5,6 +5,7 @@ import './index.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create.js';
 import BlogDetails from './BlogDetails';
+import NotFound from './NotFound';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route path="/blogs/:id">
               <BlogDetails></BlogDetails>
+            </Route>
+            <Route path="*">
+              <NotFound></NotFound>
             </Route>
           </Switch>       
         </div>
