@@ -2,6 +2,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import React, { useState, useEffect } from 'react';
 import './index.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   const [theme, setTheme] = useState(
@@ -20,14 +21,21 @@ function App() {
 
   return (
     //JSX - babel converst this to HTML
-    <div className={`App ${theme}`}>
-      <button onClick={toggleTheme}>Toggle Theme</button>
-      <Navbar></Navbar>
-      <div className='content'>
-        <Home></Home>        
+    <Router>
+      <div className={`App ${theme}`}>
+        <button onClick={toggleTheme}>Toggle Theme</button>
+        <Navbar></Navbar>
+        <div className='content'>
+          <Switch>
+            <Route path="/">
+              <Home></Home>
+            </Route>
+          </Switch>       
+        </div>
+        
       </div>
-      
-    </div>
+    </Router>
+    
   );
 }
 
