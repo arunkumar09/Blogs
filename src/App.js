@@ -7,6 +7,7 @@ import Create from './Create.js';
 import BlogDetails from './BlogDetails';
 import NotFound from './NotFound';
 
+
 function App() {
   const [theme, setTheme] = useState(
     localStorage.getItem('theme') || 'light');

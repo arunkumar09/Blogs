@@ -4,7 +4,7 @@
 * {
   margin: 0;
   font-family: Quicksand;
-  color: #333;
+  color: rgb(131, 222, 12);
 }
 
 .navbar{
@@ -13,7 +13,7 @@
   align-items: center;
   max-width: 600px;
   margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #e6e614;
 }
 
 .navbar h1{
@@ -41,7 +41,7 @@
 .blog-preview{
   padding: 10px 16 px;
   margin: 20px 0;
-  border-bottom: 1px solid #fafafa;
+  border-bottom: 1px solid #e6e614;
 }
 .blog-preview:hover{
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
